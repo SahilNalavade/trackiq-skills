@@ -1,25 +1,29 @@
 {
-  "version": 1,
+  "version": 2,
   "skills": [
     {
       "id": "gdpr_compliance",
       "name": "GDPR & Privacy Compliance",
-      "description": "Audits consent mode, pre-consent firing, CMP integration, and regional regulation compliance"
+      "description": "Audits consent mode, pre-consent firing, CMP integration, and regional regulation compliance",
+      "trigger_when": "region in [europe, uk, global] OR processEUData is true"
     },
     {
       "id": "naming_conventions",
       "name": "Tag Naming & Organization",
-      "description": "Evaluates tag, trigger, and variable names against Platform - Action - Detail convention"
+      "description": "Evaluates tag, trigger, and variable names against Platform - Action - Detail convention",
+      "trigger_when": "always"
     },
     {
       "id": "platform_coverage",
       "name": "Platform Coverage & Missing Events",
-      "description": "Finds gaps in cross-platform event tracking, missing conversions, and remarketing tags"
+      "description": "Finds gaps in cross-platform event tracking, missing conversions, and remarketing tags",
+      "trigger_when": "adPlatforms.length > 0"
     },
     {
       "id": "data_layer_quality",
       "name": "Data Layer Quality Audit",
-      "description": "Checks variable naming consistency, orphaned variables, and missing dataLayer fields"
+      "description": "Checks variable naming consistency, orphaned variables, and missing dataLayer fields",
+      "trigger_when": "always"
     }
   ]
 }
