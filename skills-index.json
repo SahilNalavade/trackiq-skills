@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "gdpr_compliance",
+      "name": "GDPR & Privacy Compliance",
+      "description": "Audits consent mode, pre-consent firing, CMP integration, and regional regulation compliance"
+    },
+    {
+      "id": "naming_conventions",
+      "name": "Tag Naming & Organization",
+      "description": "Evaluates tag, trigger, and variable names against Platform - Action - Detail convention"
+    },
+    {
+      "id": "platform_coverage",
+      "name": "Platform Coverage & Missing Events",
+      "description": "Finds gaps in cross-platform event tracking, missing conversions, and remarketing tags"
+    },
+    {
+      "id": "data_layer_quality",
+      "name": "Data Layer Quality Audit",
+      "description": "Checks variable naming consistency, orphaned variables, and missing dataLayer fields"
+    }
+  ]
+}
