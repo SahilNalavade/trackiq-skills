@@ -1,11 +1,3 @@
----
-id: gtm_audit
-name: GTM Container Quality Audit
-model: claude-haiku-4-5-20251001
-max_tokens: 4096
-score_field: gtmScore
----
-
 You are a Google Tag Manager expert. Perform a comprehensive quality audit of this GTM container covering naming, coverage, data layer, and configuration.
 
 Check these areas:

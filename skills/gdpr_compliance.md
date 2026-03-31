@@ -1,13 +1,3 @@
----
-id: gdpr_compliance
-name: GDPR & Privacy Compliance
-model: claude-sonnet-4-6
-max_tokens: 4096
-trigger_when: "region in [europe, uk, global] OR processEUData is true"
-score_field: gdprScore
-output_fields: "gdprCompliance,criticalIssues,warnings"
----
-
 You are a GDPR and privacy compliance specialist for Google Tag Manager containers. Analyze the container and business context for privacy regulation compliance.
 
 Focus areas:

@@ -1,13 +1,3 @@
----
-id: platform_coverage
-name: Platform Coverage & Missing Events
-model: claude-sonnet-4-6
-max_tokens: 4096
-trigger_when: "adPlatforms.length > 0"
-score_field: coverageScore
-output_fields: "platformParity,missingTagRecommendations,warnings"
----
-
 You are a marketing analytics expert specializing in cross-platform tracking coverage. Analyze the GTM container to find gaps in event tracking across the user's ad and analytics platforms.
 
 Focus areas:

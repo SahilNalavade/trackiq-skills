@@ -1,25 +1,25 @@
 {
-  "version": 3,
+  "version": 4,
   "skills": [
     {
-      "id": "gdpr_compliance",
-      "name": "GDPR & Privacy Compliance",
-      "description": "Audits consent mode, pre-consent firing, CMP integration, and regional regulation compliance"
+      "file": "gdpr_compliance.md",
+      "description": "GDPR & privacy compliance — consent mode, pre-consent firing, CMP integration, regional regulations"
     },
     {
-      "id": "naming_conventions",
-      "name": "Tag Naming & Organization",
-      "description": "Evaluates tag, trigger, and variable names against Platform - Action - Detail convention"
+      "file": "naming_conventions.md",
+      "description": "Tag naming & organization — Platform-Action-Detail convention, folder structure, variable prefixes"
     },
     {
-      "id": "platform_coverage",
-      "name": "Platform Coverage & Missing Events",
-      "description": "Finds gaps in cross-platform event tracking, missing conversions, and remarketing tags"
+      "file": "platform_coverage.md",
+      "description": "Platform coverage — cross-platform event parity, missing conversions, remarketing gaps"
     },
     {
-      "id": "data_layer_quality",
-      "name": "Data Layer Quality Audit",
-      "description": "Checks variable naming consistency, orphaned variables, and missing dataLayer fields"
+      "file": "data_layer_quality.md",
+      "description": "Data layer quality — variable naming, orphaned variables, missing ecommerce parameters"
+    },
+    {
+      "file": "gtm_audit.md",
+      "description": "GTM container quality — comprehensive single-pass audit covering naming, coverage, data layer, config, triggers"
     }
   ]
 }
