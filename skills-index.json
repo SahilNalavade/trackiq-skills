@@ -1,25 +1,25 @@
 {
-  "version": 5,
+  "version": 6,
   "skills": [
     {
       "file": "gdpr_compliance.md",
-      "description": "GDPR & privacy compliance — consent mode, pre-consent firing, CMP integration, regional regulations"
+      "description": "Deep privacy compliance audit — Consent Mode v2, pre-consent tag firing analysis, CMP integration, tag-level consent mapping, PII exposure scan, regional regulation compliance (GDPR, CCPA, DMA, LGPD), cross-border data transfer risks"
     },
     {
       "file": "naming_conventions.md",
-      "description": "Tag naming & organization — Platform-Action-Detail convention, folder structure, variable prefixes"
+      "description": "Container governance audit — tag/trigger/variable naming against Platform-Action-Detail convention, folder organization, consistency analysis, adoption scoring, maintainability assessment"
     },
     {
       "file": "platform_coverage.md",
-      "description": "Platform coverage — cross-platform event parity, missing conversions, remarketing gaps"
+      "description": "Cross-platform measurement audit — event parity matrix across GA4/Google Ads/Meta/LinkedIn/TikTok/Amplitude/Mixpanel, destination data validation, remarketing gaps, enhanced conversions, attribution gap analysis"
     },
     {
       "file": "data_layer_quality.md",
-      "description": "Data layer quality — variable naming, orphaned variables, missing ecommerce parameters"
+      "description": "Data layer architecture audit — variable inventory, ecommerce schema compliance, data flow tracing (dataLayer → variable → tag), Custom JS audit, timing/race condition detection, orphaned variable cleanup"
     },
     {
       "file": "gtm_audit.md",
-      "description": "GTM container quality — comprehensive single-pass audit covering naming, coverage, data layer, config, triggers"
+      "description": "Comprehensive container health audit — tag sequencing and firing order, page performance metrics (tags per trigger phase, estimated load time), paused/redundant tag detection, destination platform validation, hardcoded value detection, folder organization"
     },
     {
       "file": "resume_review.md",
