@@ -1,45 +1,33 @@
 {
-  "version": 7,
+  "version": 8,
   "skills": [
     {
       "file": "gdpr_compliance.md",
-      "description": "Deep privacy compliance — Consent Mode v2, pre-consent firing, tag-level consent mapping, PII scan, GDPR/CCPA/DMA regional compliance"
+      "description": "Privacy compliance — Consent Mode v2, pre-consent firing, tag-level consent mapping, PII scan, GDPR/CCPA/DMA regional compliance"
     },
     {
       "file": "naming_conventions.md",
       "description": "Container governance — tag/trigger/variable naming convention, folder organization, consistency analysis, maintainability scoring"
     },
     {
-      "file": "platform_coverage.md",
-      "description": "Cross-platform measurement — event parity matrix, destination data validation per platform, remarketing gaps, enhanced conversions, attribution gaps"
+      "file": "platform_tracking.md",
+      "description": "Cross-platform tracking — event parity matrix, ad platform validation (Google Ads/Meta/LinkedIn/TikTok), conversion integrity, remarketing gaps, enhanced conversions"
     },
     {
       "file": "data_layer_quality.md",
       "description": "Data layer architecture — variable inventory, ecommerce schema compliance, data flow tracing, Custom JS audit, timing/race conditions"
     },
     {
-      "file": "gtm_audit.md",
-      "description": "Comprehensive container health — tag sequencing, page performance metrics, paused/redundant detection, destination platform validation, folder organization"
-    },
-    {
-      "file": "workspace_hygiene.md",
-      "description": "Environment & workspace hygiene — prod/staging/dev environment bleed detection, versioning discipline, container ownership, complete tool inventory, bloat assessment"
-    },
-    {
-      "file": "tag_inventory.md",
-      "description": "Tag inventory & hygiene — complete tag audit, legacy/UA tag detection, duplicate tag identification, GA4 implementation quality, hardcoded values, event-to-business mapping"
+      "file": "container_health.md",
+      "description": "Container health — complete tag inventory, legacy/duplicate detection, environment hygiene, tool inventory, GA4 quality, hardcoded values, bloat assessment"
     },
     {
       "file": "spa_handling.md",
-      "description": "SPA & modern framework handling — history change detection, double-firing prevention, page path/title accuracy on virtual navigation, scroll/engagement reset, framework detection"
-    },
-    {
-      "file": "ads_platform_readiness.md",
-      "description": "Advertising platform readiness — Google Ads/Meta/LinkedIn/TikTok tag validation, conversion integrity check, remarketing signal quality, duplicate conversion prevention"
+      "description": "SPA & modern framework — history change detection, double-firing prevention, page path/title accuracy, scroll/engagement reset"
     },
     {
       "file": "performance_errors.md",
-      "description": "Performance & error handling — tag firing order impact, Custom HTML audit with estimated load times, blocking script detection, error-prone pattern identification, performance scoring"
+      "description": "Performance & errors — tag firing order impact, Custom HTML audit with load time estimates, blocking scripts, error-prone patterns"
     },
     {
       "file": "resume_review.md",
