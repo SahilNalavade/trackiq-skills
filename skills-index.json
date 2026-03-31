@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "skills": [
     {
       "file": "gdpr_compliance.md",
@@ -20,6 +20,10 @@
     {
       "file": "gtm_audit.md",
       "description": "GTM container quality — comprehensive single-pass audit covering naming, coverage, data layer, config, triggers"
+    },
+    {
+      "file": "resume_review.md",
+      "description": "Professional resume review — clarity, impact, ATS compatibility, formatting"
     }
   ]
 }
