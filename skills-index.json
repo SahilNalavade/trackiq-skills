@@ -1,29 +1,24 @@
 {
-  "version": 10,
+  "version": 11,
   "skills": [
     {
       "file": "compliance_consent.md",
-      "model": "claude-sonnet-4-6",
       "description": "Compliance & Consent — Consent Mode v2, CMP integration, pre-consent firing, PII exposure, GDPR/CCPA/LGPD, cross-border data transfer"
     },
     {
       "file": "tracking_coverage.md",
-      "model": "claude-sonnet-4-6",
       "description": "Tracking Coverage — event parity matrix, missing conversions, remarketing gaps, enhanced conversions, industry-specific gaps"
     },
     {
       "file": "container_architecture.md",
-      "model": "claude-haiku-4-5-20251001",
       "description": "Container Architecture — naming conventions, folder structure, orphaned items, duplicate tags, trigger/variable organization"
     },
     {
       "file": "data_quality.md",
-      "model": "claude-haiku-4-5-20251001",
       "description": "Data Quality — GA4 ecommerce schema, parameter completeness, variable types, hardcoded values, type mismatches, missing mappings"
     },
     {
       "file": "performance_security.md",
-      "model": "claude-sonnet-4-6",
       "description": "Performance & Security — Custom HTML risks, third-party domains, firing frequency, tag sequencing, container weight, race conditions"
     }
   ]
