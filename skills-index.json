@@ -1,33 +1,13 @@
 {
-  "version": 8,
+  "version": 9,
   "skills": [
-    {
-      "file": "gdpr_compliance.md",
-      "description": "Privacy compliance — Consent Mode v2, pre-consent firing, tag-level consent mapping, PII scan, GDPR/CCPA/DMA regional compliance"
-    },
     {
       "file": "naming_conventions.md",
       "description": "Container governance — tag/trigger/variable naming convention, folder organization, consistency analysis, maintainability scoring"
     },
     {
-      "file": "platform_tracking.md",
-      "description": "Cross-platform tracking — event parity matrix, ad platform validation (Google Ads/Meta/LinkedIn/TikTok), conversion integrity, remarketing gaps, enhanced conversions"
-    },
-    {
-      "file": "data_layer_quality.md",
-      "description": "Data layer architecture — variable inventory, ecommerce schema compliance, data flow tracing, Custom JS audit, timing/race conditions"
-    },
-    {
       "file": "container_health.md",
       "description": "Container health — complete tag inventory, legacy/duplicate detection, environment hygiene, tool inventory, GA4 quality, hardcoded values, bloat assessment"
-    },
-    {
-      "file": "spa_handling.md",
-      "description": "SPA & modern framework — history change detection, double-firing prevention, page path/title accuracy, scroll/engagement reset"
-    },
-    {
-      "file": "performance_errors.md",
-      "description": "Performance & errors — tag firing order impact, Custom HTML audit with load time estimates, blocking scripts, error-prone patterns"
     },
     {
       "file": "resume_review.md",
