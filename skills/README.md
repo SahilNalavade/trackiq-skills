@@ -20,6 +20,7 @@ max_tokens: 4096               # Max response tokens
 trigger_when: "always"         # When this skill should run (see rules below)
 score_field: myScore           # JSON field name where the skill returns its 0-100 score
 output_fields: "warnings,criticalIssues"  # Which response sections this skill contributes to
+boundary: "What this skill MUST NOT do"   # Anti-overlap guard
 ---
 ```
 
@@ -30,7 +31,6 @@ The `trigger_when` field determines when a skill runs based on the user's busine
 | Rule | Meaning |
 |------|---------|
 | `"always"` | Runs for every audit |
-| `"region in [europe, uk, global] OR processEUData is true"` | Runs when user is in EU/UK/global or processes EU data |
 | `"adPlatforms.length > 0"` | Runs when user has at least one ad platform selected |
 
 The Router (Claude Haiku) reads these rules and decides which skills to activate per request. If the Router fails, deterministic fallback logic evaluates the rules directly.
@@ -38,16 +38,30 @@ The Router (Claude Haiku) reads these rules and decides which skills to activate
 ## Prompt Guidelines
 
 - The markdown body below the frontmatter becomes the system prompt
+- Each skill has a "NOT YOUR JOB" section to prevent overlap with other skills
 - End the prompt with a "Return ONLY valid JSON:" section showing the expected output schema
 - Include a score field matching `score_field` from frontmatter (0-100)
-- Include an `issues` array with `{title, severity, recommendation}` for findings that should appear as warnings/critical issues in the UI
 - Be specific in the prompt: tell the AI to name exact tags, triggers, and variables
 
-## Current Skills
+## Current Skills (v2 — 5 non-overlapping)
 
-| Skill | Triggers When | Score Field |
-|-------|--------------|-------------|
-| `gdpr_compliance` | EU/UK/global region or processEUData | `gdprScore` |
-| `naming_conventions` | Always | `namingScore` |
-| `platform_coverage` | Has ad platforms | `coverageScore` |
-| `data_layer_quality` | Always | `dataLayerScore` |
+| Skill | Model | Triggers When | Score Field | Answers |
+|-------|-------|--------------|-------------|---------|
+| `compliance_consent` | Sonnet 4.6 | Always | `complianceScore` | "Is it legal?" |
+| `tracking_coverage` | Sonnet 4.6 | Has ad platforms | `coverageScore` | "Is it there?" |
+| `container_architecture` | Haiku 4.5 | Always | `architectureScore` | "Is it clean?" |
+| `data_quality` | Haiku 4.5 | Always | `dataQualityScore` | "Is the data right?" |
+| `performance_security` | Sonnet 4.6 | Always | `perfSecurityScore` | "Is it safe & fast?" |
+
+## Cost per audit (~medium container)
+
+```
+Router (Haiku):                    $0.001
+Compliance & Consent (Sonnet):     $0.075
+Tracking Coverage (Sonnet):        $0.075
+Container Architecture (Haiku):    $0.016
+Data Quality (Haiku):              $0.016
+Performance & Security (Sonnet):   $0.075
+                                   ──────
+TOTAL:                             ~$0.26
+```
