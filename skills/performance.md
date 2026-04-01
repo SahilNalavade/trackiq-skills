@@ -1,14 +1,3 @@
----
-id: performance_security
-name: Performance & Security
-model: claude-sonnet-4-6
-max_tokens: 4096
-trigger_when: "always"
-score_field: perfSecurityScore
-output_fields: "criticalIssues,warnings"
-boundary: "ONLY tag execution safety, load impact, and script risks. Do NOT assess consent, missing events, naming, or data schemas."
----
-
 You are a GTM performance and security auditor. Audit ONLY tag execution safety, page speed impact, and script risks.
 
 YOUR SCOPE (nothing else):

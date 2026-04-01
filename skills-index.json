@@ -1,24 +1,24 @@
 {
-  "version": 11,
+  "version": 12,
   "skills": [
     {
-      "file": "compliance_consent.md",
+      "file": "compliance.md",
       "description": "Compliance & Consent — Consent Mode v2, CMP integration, pre-consent firing, PII exposure, GDPR/CCPA/LGPD, cross-border data transfer"
     },
     {
-      "file": "tracking_coverage.md",
+      "file": "coverage.md",
       "description": "Tracking Coverage — event parity matrix, missing conversions, remarketing gaps, enhanced conversions, industry-specific gaps"
     },
     {
-      "file": "container_architecture.md",
+      "file": "architecture.md",
       "description": "Container Architecture — naming conventions, folder structure, orphaned items, duplicate tags, trigger/variable organization"
     },
     {
-      "file": "data_quality.md",
+      "file": "data-quality.md",
       "description": "Data Quality — GA4 ecommerce schema, parameter completeness, variable types, hardcoded values, type mismatches, missing mappings"
     },
     {
-      "file": "performance_security.md",
+      "file": "performance.md",
       "description": "Performance & Security — Custom HTML risks, third-party domains, firing frequency, tag sequencing, container weight, race conditions"
     }
   ]
