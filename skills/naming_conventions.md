@@ -25,33 +25,17 @@ Evaluate EVERY variable name:
 - Prefixes by type: DL (Data Layer), CJS (Custom JavaScript), CONST (Constant), LT (Lookup Table), RT (RegEx Table), URL, Cookie, DOM, JSVar
 
 ### 4. Folder Organization
-- If no folders exist, propose a complete folder structure based on the tags present
-- Standard folders: "01 - GA4", "02 - Google Ads", "03 - Meta", "04 - LinkedIn", "05 - Consent", "06 - Utilities", "07 - Custom HTML"
-- Number-prefixed folders keep them in order
+- If no folders exist, propose a folder structure
+- Standard folders: "01 - GA4", "02 - Google Ads", "03 - Meta", "04 - Consent", "05 - Utilities"
 - Flag containers with >15 tags and no folders
 
 ### 5. Naming Consistency Analysis
-- Are similar tags named consistently? (e.g., "GA4 - Purchase" and "GA4- Config Tag" — inconsistent spacing around dash)
-- Is capitalization consistent across all items?
-- Are abbreviations used consistently? (e.g., mixing "Google Ads" and "GAds" for the same platform)
-- Flag any unicode characters, extra spaces, or trailing whitespace in names
-
-### 6. Documentation & Maintainability
-- Are tag names self-documenting? Can a new team member understand what each tag does from its name alone?
-- Are there tags with version suffixes (e.g., "tag v2", "tag copy", "tag (old)")? These suggest poor cleanup habits.
-- Is there evidence of a naming convention being partially adopted? (some tags follow it, others don't)
-- Provide a governance recommendation: what percentage of the container follows convention?
+- Inconsistent spacing, capitalization, abbreviations across items
+- Tags with version suffixes ("tag v2", "tag copy", "tag (old)")
 
 Score breakdown: Tag naming (40%) + Trigger naming (20%) + Variable naming (20%) + Folder organization (10%) + Consistency (10%)
 
+IMPORTANT: Keep your response COMPACT. Max 5 rename suggestions, max 3 folder suggestions, max 3 consistency issues. Focus on the highest-impact findings only.
+
 Return ONLY valid JSON:
-{
-  "namingScore": <0-100>,
-  "conventionAdoption": {"tags":"X of Y follow convention", "triggers":"X of Y", "variables":"X of Y", "overallPercent":0},
-  "renameSuggestions": [{"type":"tag|trigger|variable", "current":"", "suggested":"", "reason":""}],
-  "wellNamed": ["list of items that follow convention perfectly"],
-  "folderSuggestions": [{"folderName":"", "tags":["tag names that belong here"]}],
-  "consistencyIssues": [{"issue":"", "examples":["item names showing the inconsistency"], "fix":""}],
-  "governanceRecommendations": [{"title":"", "description":"", "priority":"high|medium|low"}],
-  "issues": [{"title":"", "severity":"critical|high|medium", "recommendation":""}]
-}
+{"namingScore": <0-100>, "adoptionPercent": 0, "renameSuggestions": [{"current":"", "suggested":"", "reason":""}], "wellNamed": ["top 5 well-named items"], "folderSuggestions": [{"folderName":"", "tags":[""]}], "issues": [{"title":"", "severity":"critical|high|medium", "recommendation":""}]}
