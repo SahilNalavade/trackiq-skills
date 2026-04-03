@@ -35,6 +35,13 @@
       "model": "claude-haiku-4-5-20251001",
       "max_tokens": 4096,
       "category": "tag_quality_and_performance"
+    },
+    {
+      "file": "recipe-critic.md",
+      "model": "claude-haiku-4-5-20251001",
+      "max_tokens": 2048,
+      "description": "Recipe Critic — evaluates cooking recipes for clarity, completeness, missing ingredients, unclear steps, equipment needs, difficulty, and time accuracy",
+      "category": "unrelated_test"
     }
   ]
 }
