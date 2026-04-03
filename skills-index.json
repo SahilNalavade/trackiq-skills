@@ -1,25 +1,40 @@
 {
-  "version": 12,
+  "version": 13,
   "skills": [
     {
       "file": "compliance.md",
-      "description": "Compliance & Consent — Consent Mode v2, CMP integration, pre-consent firing, PII exposure, GDPR/CCPA/LGPD, cross-border data transfer"
+      "description": "Compliance & Consent — Consent Mode v2, CMP integration, pre-consent firing, PII exposure, GDPR/CCPA/LGPD, cross-border data transfer",
+      "model": "claude-haiku-4-5-20251001",
+      "max_tokens": 8192,
+      "category": "consent_and_privacy"
     },
     {
       "file": "coverage.md",
-      "description": "Tracking Coverage — event parity matrix, missing conversions, remarketing gaps, enhanced conversions, industry-specific gaps"
+      "description": "Tracking Coverage — event parity matrix, missing conversions, remarketing gaps, enhanced conversions, industry-specific gaps",
+      "model": "claude-haiku-4-5-20251001",
+      "max_tokens": 8192,
+      "category": "event_coverage"
     },
     {
       "file": "architecture.md",
-      "description": "Container Architecture — naming conventions, folder structure, orphaned items, duplicate tags, trigger/variable organization"
+      "description": "Container Architecture — naming conventions, folder structure, orphaned items, duplicate tags, trigger/variable organization",
+      "model": "claude-haiku-4-5-20251001",
+      "max_tokens": 4096,
+      "category": "naming_and_governance"
     },
     {
       "file": "data-quality.md",
-      "description": "Data Quality — GA4 ecommerce schema, parameter completeness, variable types, hardcoded values, type mismatches, missing mappings"
+      "description": "Data Quality — GA4 ecommerce schema, parameter completeness, variable types, hardcoded values, type mismatches, missing mappings",
+      "model": "claude-haiku-4-5-20251001",
+      "max_tokens": 8192,
+      "category": "data_layer_integrity"
     },
     {
       "file": "performance.md",
-      "description": "Performance & Security — Custom HTML risks, third-party domains, firing frequency, tag sequencing, container weight, race conditions"
+      "description": "Performance & Security — Custom HTML risks, third-party domains, firing frequency, tag sequencing, container weight, race conditions",
+      "model": "claude-haiku-4-5-20251001",
+      "max_tokens": 4096,
+      "category": "tag_quality_and_performance"
     }
   ]
 }
