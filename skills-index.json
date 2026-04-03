@@ -3,7 +3,7 @@
   "skills": [
     {
       "file": "compliance.md",
-      "description": "Compliance & Consent — Consent Mode v2, CMP integration, pre-consent firing, PII exposure, GDPR/CCPA/LGPD, cross-border data transfer",
+      "description": "Compliance & Consent — region-aware (flags only applicable regulations per user region). Consent Mode v2, CMP integration, pre-consent firing, PII exposure, GDPR/CCPA/LGPD, cross-border data transfer",
       "model": "claude-haiku-4-5-20251001",
       "max_tokens": 8192,
       "category": "consent_and_privacy"
